@@ -112,5 +112,6 @@ imputedValues$day = as.factor(ifelse(is.element(weekdays(as.Date(imputedValues$d
 # aggregate average steps over 5 minute intervals
 stepsMeanIntervalImputed <- aggregate(steps ~ interval + day, imputedValues, mean)
 
+# plot to compare weekday to weekend
 xyplot(stepsMeanIntervalImputed$steps ~ stepsMeanIntervalImputed$interval | stepsMeanIntervalImputed$day, main = "Average number of steps per day per interval", xlab = "Interval", ylab = "Average number of steps", layout = c(1, 2), type = "l")
 ```
