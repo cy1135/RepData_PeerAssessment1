@@ -1,0 +1,20 @@
+---
+title: "reproducible data shiny app"
+author: "Charles Yoo"
+date: "June 25, 2016"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is a shiny implemtation of the Reproducible Data Peer Assessment Project.  Data was used for activity step monitoring.  
+
+The slider allows the user to change the number of days looking at the total number of steps, beginning from 1 to 60.  In cleaning and aggregating the data by number of days, this number changes to 53.
+
+There is another slider, as a work in progress, that displays the number of groups or bins being displayed, based on number of day choice.
+
+
+
