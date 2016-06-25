@@ -1,13 +1,12 @@
-# todo: add imputed selection option
-#
-
 library(shiny)
 
-fluidPage(
-    # app title
+# Define UI for application that draws a histogram
+shinyUI(fluidPage(
+    
+    # Application title
     titlePanel("Total Number of Steps Taken per Day"),
     
-    # sidebar with slider input for number of days
+    # Sidebar with a slider input for the number of bins
     sidebarLayout(
         sidebarPanel(
             sliderInput("days",
@@ -15,13 +14,11 @@ fluidPage(
                         min = 1,
                         max = 60,
                         value = 1)
-           #selectInput("imputed", "Choose imputed:",
-            #            choices = c("none", "imputed"))
         ),
-    
-        # plot of generated distribution
+        
+        # Show a plot of the generated distribution
         mainPanel(
             plotOutput("distPlot")
         )
     )
-)
+))
