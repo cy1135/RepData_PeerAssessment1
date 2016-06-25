@@ -1,0 +1,36 @@
+Reproducible Research Project Shiny App
+========================================================
+author: Charles Yoo
+date: June 25, 2016
+autosize: true
+
+Introduction
+========================================================
+
+This app is an exercise in taking the data from the Reproducible Research Peer Assessment Project.  
+
+The app allows the user to specify the number of days to aggregate the total number of steps.  
+
+![my images](shinyapp.png)
+
+Source Code Location
+========================================================
+
+The source code for the shiny app, ui.R and server.R, can be found in the same directory as the original project at:
+
+https://github.com/cy1135/RepData_PeerAssessment1
+
+Shiny App Location
+========================================================
+
+The app location can be found here:
+
+https://cy1135.shinyapps.io/RepData_PeerAssessment1/
+
+Data
+========================================================
+```{r echo = TRUE}
+library(data.table)
+data <- read.csv("activity.csv")
+head(data)
+```

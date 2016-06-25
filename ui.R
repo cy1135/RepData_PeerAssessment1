@@ -13,7 +13,8 @@ shinyUI(fluidPage(
                         "Number of days:",
                         min = 1,
                         max = 60,
-                        value = 1)
+                        value = 1),
+            uiOutput("slider")
         ),
         
         # Show a plot of the generated distribution

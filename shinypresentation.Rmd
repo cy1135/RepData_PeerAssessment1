@@ -1,0 +1,30 @@
+---
+title: "shiny presentation"
+author: "Charles Yoo"
+date: "June 25, 2016"
+output: ioslides_presentation
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Shiny Presentation
+
+This app is an exercise in taking the data from the Reproducible Research Peer Assessment Project.  
+
+The app allows the user to specify the number of days to aggregate the total number of steps.  
+
+## Source Code Location
+
+The source code for the shiny app, ui.R and server.R, can be found in the same directory as the original project at:
+
+https://github.com/cy1135/RepData_PeerAssessment1
+
+## App URL
+
+The app location can be found here:
+
+https://cy1135.shinyapps.io/RepData_PeerAssessment1/
+
